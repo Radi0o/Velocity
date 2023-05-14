@@ -41,7 +41,7 @@ public class Velocity {
 
     // If Velocity's natives are being extracted to a different temporary directory, make sure the
     // Netty natives are extracted there as well
-    if (System.getProperty("velocity.natives-tmpdir") != null) {
+    if (System.getProperty("shadowcord.natives-tmpdir") != null) {
       System.setProperty("io.netty.native.workdir", System.getProperty("velocity.natives-tmpdir"));
     }
 
